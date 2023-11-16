@@ -13,28 +13,6 @@ after encoding are used as ground truths.
 
 ![approach](resources/imgs/approach.png)
 
-## Check our blog post
-[Machine learning for video coding optimisation](https://www.bbc.co.uk/rd/blog/2020-04-machine-learning-video-coding-optimisation)
-
-## Publication
-2018 IEEE Visual Communications and Image Processing (VCIP).
-The paper is available at 
-[IEEE Xplore](https://dx.doi.org/10.1109/VCIP.2018.8698721) 
-and [arXiv](https://arxiv.org/abs/2003.06315).
-
-Please cite this work as:
-
-```
-@inproceedings{Santamaria2018,
-  author = {M. Santamaria and E. Izquierdo and S. Blasi and M. Mrak},
-  booktitle = {2018 IEEE Visual Communications and Image Processing (VCIP)},
-  title = {Estimation of Rate Control Parameters for Video Coding Using CNN},
-  year = {2018},
-  doi = {10.1109/VCIP.2018.8698721},
-  ISSN = {1018-8770},
-  month = dec,
-}
-```
 
 ## How to use
 
@@ -117,12 +95,3 @@ Complete and run the following command to test the trained models:
 ```bash
 python3 cnn-rate-distortion --task test --model_name [model name] --data_name [dataset name] --batch_size [imgs per batch] --loss_type [function] --width [CTU width] --height [CTU height] --levels [num QPs] --archive_dir [output dir] --test_data [path to test dataset]
 ```
-
-## Acknowledgements
-This work was co-supported by the  [Engineering and 
-Physical Sciences Research Council](https://epsrc.ukri.org/) of the UK, through an [iCASE](https://epsrc.ukri.org/skills/students/industrial-case/intro/) studentship in collaboration with the [School of Electronic Engineering and Computer Science](http://eecs.qmul.ac.uk/), [Queen Mary University of London]([qmul.ac.uk/](https://www.qmul.ac.uk/)).
-
-## Contact
-If you have any general doubt about our work or code which may be of 
-interest for other researchers, please use the [issues section](https://github.com/bbc/cnn-rate-distortion/issues).
-Alternatively, drop us an e-mail at [maria.santamaria@bbc.co.uk](mailto:maria.santamaria@bbc.co.uk).
